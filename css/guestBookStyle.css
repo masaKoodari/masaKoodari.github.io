@@ -1,0 +1,121 @@
+body{
+    font-family: cursive;
+    color: #2c1200;
+    background-color: white;
+    margin: 0;
+}
+h1{
+    font-family: sniglet, cursive;
+}
+#wrapper{
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 2px solid #ac774b;
+    border-radius: 6px;
+    box-shadow: 0px 1px 60px rgba(0,0,0,0.2);
+    background-color: peachpuff;
+    height: 45em;
+}
+
+#banner{
+    background-color: lightpink;
+    height: 100px;
+    border-bottom: 1px solid #ac774b
+}
+#bannertext{
+    margin: 0;
+    padding: 15px;
+    font-size: x-large;
+}
+
+#vieraslista{
+    overflow-y: scroll;
+    border: 1px solid #ac774b;
+    list-style-type: none;
+    background-color: #ffe8d5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-inline-start: 0px;
+    margin: 0;
+}
+
+li{
+    padding: 5px;
+    border: 1px solid #ac774b;
+    margin: 15px;
+    
+}
+
+
+#grid-container{
+    padding: 15px;
+    height: 74%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 10% 98%;
+
+}
+
+#vieras{
+   /* height: 10%;
+    width: 50%;  */
+    border: 1px solid #ac774b;
+    background-color: #ffe8d5;  
+}
+
+#lisää{
+    color: #2c1200;
+    background-color: lightpink;
+    border-radius: 6px;
+    border-color: #ac774b;
+    font-family: sniglet, cursive;
+    font-size: 100%
+}
+
+#lisää:hover{
+    background-color: #ddd;
+}
+
+/* Navigointi palkin css */
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(255, 232, 225);
+    position: relative;
+    border-bottom: 1px solid #ac774b;
+  }
+.topnav #myLinks {
+    display: none;
+  }
+.topnav a {
+    color: #2C1200;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: 'Sniglet', cursive;
+  }
+.topnav a.icon {
+    background: peachpuff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.active {
+    background-color: lightpink;
+    color: white;
+    border-bottom: 1px solid #ac774b
+  }
+
+#vieraslista-väliviiva{
+    border-top: 1px solid #ac774b;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vieraslista</title>
+    <link rel="stylesheet" href="../css/guestBookStyle.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@800&display=swap" rel="stylesheet">
+    <!--navigointi palkin linkit ja script-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="menu.js"></script>
+</head>
+<body>
+    <!-- Sivun yläosaan/reunaan valikko header -->
+    <div class="topnav">
+        <a href="parallax.html" class="active">Hopeanuoli</a>
+        <div id="myLinks">        
+          <a href="calculator.html" classs="hahaa">Laskuri</a>
+          <a href="guestBook.html" class="hahaa" id="vieraslista-väliviiva" >Vieraslista</a> <!--id on väliviivaa varten-->
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    
+    <!--Itse sivun keskelle kaikki ainutlaatuinen sisältö, eli vieraslista-->
+    <div id="wrapper"> <!--Ikkuna joka sisältää vieraslistan.-->
+        <div id="banner">
+            <h1 id="bannertext">Koirien ja koiramielisten vieraslista</h1>   
+        </div>
+        <div id="grid-container"> <!--gridi jossa input kenttä, nappi ja vieraslista-->
+            <textarea id="vieras" rows="4" cols="50" placeholder="Jätä viesti!"></textarea>
+            <button id="lisää" onclick="listaLisäys()">Lisää</button>
+            <ul id="vieraslista">
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="../js/guestBookApp.js"></script>
+</html>

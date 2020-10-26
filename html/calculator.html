@@ -1,0 +1,89 @@
+<!-- 
+|￣￣￣￣￣￣￣￣￣￣￣|
+Author: masaKoodari
+xx.xx.xxxx
+Koira sivuston laskuri
+|＿＿＿＿＿＿＿＿＿＿＿|
+(\__/) ||
+(•ㅅ•) ||
+/ 　 づ 
+-->
+
+<!DOCTYPE html>
+
+<!--Google Fonts: Sniglet-->
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@800&display=swap" rel="stylesheet">
+
+<!--navigointi palkin linkit ja script-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+
+<html>
+
+<body style="font-family:'sniglet', cursive, sans-serif">
+
+    <!-- Sivun yläosaan/reunaan valikko header -->
+    <div class="topnav">
+        <a href="parallax.html" class="active">Hopeanuoli</a>
+        <div id="myLinks">
+            <a href="calculator.html" classs="hahaa">Laskuri</a>
+            <a href="guestBook.html" class="hahaa" id="vieraslista-väliviiva">Vieraslista</a>
+            <!--id on väliviivaa varten-->
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <title>Laskuri | Hopeanuoli</title>
+    <img id="doggo"
+        src="http://wallarthd.com/wp-content/uploads/2014/09/Funny-Dog-Reading-a-Newspaper-Wallpaper-Full-HD.jpg"
+        alt="doggo">
+
+    <h1 id="menekki">KOIRAN RUUAN MENEKKI</h1>
+
+    <div id="calculator">
+
+        <h1 id="paino">KOIRAN PAINO</h1>
+
+        <input type="text" id="kginput" maxlength="5" name='kginput' onfocus="getTotal()" />
+
+        <h1 id="kg">KG</h1>
+
+        <hr>
+
+        <h1 id="ammatti">KOIRAN AMMATTI</h1>
+
+        <div class="custom-select" style="width:200px;">
+            <select id="valitse">
+                <option value=0>VALITSE</option>
+                <option value=25>Poliisikoira</option>
+                <option value=50>Tohtorikoira</option>
+                <option value=75>Oikeuskoira</option>
+            </select>
+        </div>
+
+        <hr>
+
+        <H1 id="total">KUSTANNUKSET</H1>
+
+        <input id="sum" type='text' name='total' readonly />
+
+        <h1 id="euro">€</h1>
+
+    </div>
+
+</body>
+
+</html>
+
+<link rel="stylesheet" href="../css/calculator.css">
+
+<script src="../js/calculator.js"></script>
