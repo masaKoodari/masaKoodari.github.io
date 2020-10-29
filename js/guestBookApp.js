@@ -19,6 +19,9 @@ function jumalauta() {
   document.getElementById("vieraslista").innerHTML += "<li>" + arr + "</li>";
 }
 
+//SEND ARRAY TO JSON
+var myJSON = JSON.stringify(arr);
+
 /* navigointi palkin scripti */
 
 function myFunction() {
